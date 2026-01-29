@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Pereira - Resume</title>
+    <style>
+        /* Reset margins and padding */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            /* Prevent body scrollbars */
+            background-color: #525659;
+            /* Standard PDF viewer background color */
+        }
+
+        /* Make the PDF container fill the entire screen */
+        .pdf-viewer {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            display: block;
+        }
+
+        /* Centered fallback link if PDF fails to load */
+        .fallback {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="resume.pdf#view=FitH" class="pdf-viewer" type="application/pdf">
+        <div class="fallback">
+            <p>Your browser does not support inline PDFs. <br>
+                <a href="resume.pdf">Click here to download and view the resume.</a>
+            </p>
+        </div>
+    </iframe>
+</body>
+
+</html>
