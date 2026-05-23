@@ -1,0 +1,896 @@
+<!doctype html>
+<!-- This site was created in Webflow. https://webflow.com -->
+<!-- Last Published: Tue Dec 09 2025 20:37:47 GMT+0000 (Coordinated Universal Time) -->
+<html
+  data-wf-domain="getchaotic.com"
+  data-wf-page="66e49d7cd33dae573ee55838"
+  data-wf-site="64826ec4a57c4c0a117433b1"
+  class="w-mod-js wf-montserrat-n5-active wf-montserrat-n4-active wf-montserrat-n7-active wf-montserrat-n1-active wf-contrailone-n4-active wf-opensans-n4-active wf-montserrat-n2-active wf-opensans-i4-active wf-montserrat-i1-active wf-montserrat-i2-active wf-montserrat-n3-active wf-montserrat-i3-active wf-montserrat-i4-active wf-montserrat-i5-active wf-montserrat-n6-active wf-montserrat-i6-active wf-montserrat-i7-active wf-montserrat-n8-active wf-montserrat-i8-active wf-montserrat-n9-active wf-montserrat-i9-active wf-opensans-n3-active wf-opensans-i3-active wf-opensans-n6-active wf-opensans-i6-active wf-opensans-n7-active wf-opensans-i7-active wf-opensans-n8-active wf-opensans-i8-active wf-active"
+  style="--wm-toolbar-height: 67px"
+>
+  <script type="text/javascript">
+    var spector;
+    var captureOnLoad = false;
+    var captureOffScreen = false;
+    window.__SPECTOR_Canvases = [];
+
+    (function () {
+      var __SPECTOR_Origin_EXTENSION_GetContext =
+        HTMLCanvasElement.prototype.getContext;
+      HTMLCanvasElement.prototype.__SPECTOR_Origin_EXTENSION_GetContext =
+        __SPECTOR_Origin_EXTENSION_GetContext;
+
+      if (typeof OffscreenCanvas !== "undefined") {
+        var __SPECTOR_Origin_EXTENSION_OffscreenGetContext =
+          OffscreenCanvas.prototype.getContext;
+        OffscreenCanvas.prototype.__SPECTOR_Origin_EXTENSION_OffscreenGetContext =
+          __SPECTOR_Origin_EXTENSION_OffscreenGetContext;
+
+        OffscreenCanvas.prototype.getContext = function () {
+          var context = null;
+          if (!arguments.length) {
+            return context;
+          }
+
+          if (arguments.length === 1) {
+            context = this.__SPECTOR_Origin_EXTENSION_OffscreenGetContext(
+              arguments[0],
+            );
+            if (context === null) {
+              return context;
+            }
+          } else if (arguments.length === 2) {
+            context = this.__SPECTOR_Origin_EXTENSION_OffscreenGetContext(
+              arguments[0],
+              arguments[1],
+            );
+            if (context === null) {
+              return context;
+            }
+          }
+
+          var contextNames = [
+            "webgl",
+            "experimental-webgl",
+            "webgl2",
+            "experimental-webgl2",
+          ];
+          if (contextNames.indexOf(arguments[0]) !== -1) {
+            // context.canvas.setAttribute("__spector_context_type", arguments[0]);
+            // Notify the page a canvas is available.
+            var myEvent = new CustomEvent("SpectorWebGLCanvasAvailableEvent");
+            document.dispatchEvent(myEvent);
+            this.id = "Offscreen";
+            window.__SPECTOR_Canvases.push(this);
+
+            if (captureOnLoad) {
+              // Ensures canvas is in the dom to capture the one we are currently tracking.
+              if (false) {
+                spector.captureContext(context, 500, false, false);
+                captureOnLoad = false;
+              }
+            }
+          }
+
+          return context;
+        };
+      }
+
+      HTMLCanvasElement.prototype.getContext = function () {
+        var context = null;
+        if (!arguments.length) {
+          return context;
+        }
+
+        if (arguments.length === 1) {
+          context = this.__SPECTOR_Origin_EXTENSION_GetContext(arguments[0]);
+          if (context === null) {
+            return context;
+          }
+        } else if (arguments.length === 2) {
+          context = this.__SPECTOR_Origin_EXTENSION_GetContext(
+            arguments[0],
+            arguments[1],
+          );
+          if (context === null) {
+            return context;
+          }
+        }
+
+        var contextNames = [
+          "webgl",
+          "experimental-webgl",
+          "webgl2",
+          "experimental-webgl2",
+        ];
+        if (contextNames.indexOf(arguments[0]) !== -1) {
+          context.canvas.setAttribute("__spector_context_type", arguments[0]);
+          // Notify the page a canvas is available.
+          var myEvent = new CustomEvent("SpectorWebGLCanvasAvailableEvent");
+          document.dispatchEvent(myEvent);
+
+          if (captureOffScreen) {
+            var found = false;
+            for (var i = 0; i < window.__SPECTOR_Canvases.length; i++) {
+              if (window.__SPECTOR_Canvases[i] === this) {
+                found = true;
+                break;
+              }
+            }
+            if (!found) {
+              window.__SPECTOR_Canvases.push(this);
+            }
+          }
+
+          if (captureOnLoad) {
+            // Ensures canvas is in the dom to capture the one we are currently tracking.
+            if (this.parentElement || false) {
+              spector.captureContext(context, 500, false, false);
+              captureOnLoad = false;
+            }
+          }
+        }
+
+        return context;
+      };
+    })();
+  </script>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style>
+      .wf-force-outline-none[tabindex="-1"]:focus {
+        outline: none;
+      }
+    </style>
+    <script src="assets/athena.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.addEventListener("DOMContentLoaded", function () {
+        var v = archive_analytics.values;
+        v.service = "wb";
+        v.server_name = "wwwb-app257.us.archive.org";
+        v.server_ms = 536;
+        archive_analytics.send_pageview({});
+      });
+    </script>
+    <script
+      type="text/javascript"
+      src="assets/bundle-playback.js"
+      charset="utf-8"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/wombat.js"
+      charset="utf-8"
+    ></script>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.RufflePlayer.config = {
+        autoplay: "on",
+        unmuteOverlay: "hidden",
+        showSwfDownload: true,
+      };
+    </script>
+    <script type="text/javascript" src="assets/ruffle.js"></script>
+    <script type="text/javascript">
+      __wm.init("https://web.archive.org/web");
+      __wm.wombat(
+        "https://getchaotic.com/features",
+        "20260213024854",
+        "https://web.archive.org/",
+        "web",
+        "https://web-static.archive.org/_static/",
+        "1770950934",
+      );
+    </script>
+    <link rel="stylesheet" type="text/css" href="assets/banner-styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/iconochive.css" />
+    <!-- End Wayback Rewrite JS Include -->
+    <meta charset="utf-8" />
+    <title>Chaotic Engine | The Future of Web Games Starts Here</title>
+    <meta
+      content="Introducing Chaotic Engine – game developers can now build console-quality 3D games with the massive distribution of the web."
+      name="description"
+    />
+    <meta
+      content="Chaotic Engine | The Future of Web Games Starts Here"
+      property="og:title"
+    />
+    <meta
+      content="Introducing Chaotic Engine – game developers can now build console-quality 3D games with the massive distribution of the web."
+      property="og:description"
+    />
+    <meta
+      content="Chaotic Engine | The Future of Web Games Starts Here"
+      property="twitter:title"
+    />
+    <meta
+      content="Introducing Chaotic Engine – game developers can now build console-quality 3D games with the massive distribution of the web."
+      property="twitter:description"
+    />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link
+      href="assets/ultimate-games.webflow.shared.c78b99dc2.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://web.archive.org/web/20260213024854/https://fonts.googleapis.com/"
+      rel="preconnect"
+    />
+    <link
+      href="https://web.archive.org/web/20260213024854/https://fonts.gstatic.com/"
+      rel="preconnect"
+      crossorigin="anonymous"
+    />
+    <script src="assets/webfont.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="assets/css.css" media="all" />
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: [
+            "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic",
+            "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic",
+            "Contrail One:regular",
+          ],
+        },
+      });
+    </script>
+    <script type="text/javascript">
+      !(function (o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        ((n.className += t + "js"),
+          ("ontouchstart" in o ||
+            (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + "touch"));
+      })(window, document);
+    </script>
+    <link
+      href="https://web.archive.org/web/20260213024854im_/https://cdn.prod.website-files.com/64826ec4a57c4c0a117433b1/66e34e80ebb14f86725d78e3_color-fav2.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://web.archive.org/web/20260213024854im_/https://cdn.prod.website-files.com/64826ec4a57c4c0a117433b1/66d8c06a72be33c66a45ca7f_slack1.png"
+      rel="apple-touch-icon"
+    />
+    <script async="" src="assets/js"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("set", "developer_id.dZGVlNj", true);
+      gtag("js", new Date());
+      gtag("config", "G-QPLG714V94");
+    </script>
+    <script src="assets/cookie-consent.js"></script>
+    <script src="assets/api.js"></script>
+  </head>
+  <body class="body-6">
+    <div
+      data-collapse="medium"
+      data-animation="default"
+      data-duration="400"
+      data-easing="ease"
+      data-easing2="ease"
+      role="banner"
+      class="navigation w-nav"
+    >
+      <div class="navigation-wrap">
+        <a
+          href="https://web.archive.org/web/20260213024854/https://getchaotic.com/"
+          class="logo-link w-nav-brand"
+          aria-label="home"
+          ><img
+            src="assets/66cc88285a7e7d37c2a7cbb1_logo.png"
+            width="200"
+            sizes="(max-width: 479px) 83vw, 200px"
+            srcset="
+              assets/66cc88285a7e7d37c2a7cbb1_logo-p-500.png 500w,
+              assets/66cc88285a7e7d37c2a7cbb1_logo.png       656w
+            "
+            alt=""
+            class="logo-image"
+        /></a>
+        <div class="menu">
+          <nav role="navigation" class="navigation-items w-nav-menu"></nav>
+        </div>
+        <a
+          href="https://web.archive.org/web/20260213024854/https://getchaotic.com/request-invite"
+          class="button cc-contact-us w-inline-block"
+          ><div class="text-block-2">REQUEST INVITE</div></a
+        >
+      </div>
+      <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+    </div>
+    <div class="section">
+      <div class="engine-features">
+        <div class="styleguide-content-wrap">
+          <div class="styleguide-block">
+            <div class="w-layout-hflex flex-block-3">
+              <div class="label cc-light">engine</div>
+              <img
+                src="assets/66ccd413bb9dffdb1070e2f8_slash-vector.svg"
+                loading="lazy"
+                alt=""
+              />
+              <div class="label cc-light">Engine features</div>
+            </div>
+            <div class="div-block-37">
+              <h1 class="heading-6">Introduction</h1>
+              <p class="paragraph">
+                The Chaotic engine is built for high-performance,
+                console-quality 3D web games, offering cutting-edge features
+                that enable developers to push the boundaries of what’s possible
+                on the web. Using modern technologies like Rust, WebAssembly,
+                and WebGL2, our engine delivers exceptional graphics, realistic
+                physics, and seamless gameplay—right in the browser. Whether
+                you’re building expansive game worlds or fast-paced action
+                titles, we provide the tools and services needed to create
+                immersive experiences with unmatched performance.<br />
+              </p>
+              <h2 class="heading-6">Studio</h2>
+              <h6>Advanced 3D Game Editor</h6>
+              <p class="paragraph">
+                Our studio editor bridges the gap between technical programming
+                and creative design. It's built to handle the complexity of
+                modern 3D game development, offering a streamlined workflow with
+                powerful in-engine tools.
+              </p>
+              <ul role="list" class="list">
+                <li>
+                  <strong>Manage Game Assets</strong>: Use our asset browser to
+                  quickly access and manage assets.
+                </li>
+                <li>
+                  <strong>Comprehensive editing tools</strong>: Includes
+                  essential tools like translation, rotation, gizmos, snapping,
+                  grid overlays, debug views, and more.<br />
+                </li>
+                <li>
+                  <strong>Collaborative tools</strong>: Built-in commenting
+                  system and video recording to support remote or team-based
+                  development.<br />
+                </li>
+                <li>
+                  <strong>Intuitive interface</strong>: A UI designed to feel
+                  familiar and easy-to-use.<br />
+                </li>
+              </ul>
+              <h2 class="heading-6">Rendering</h2>
+              <h6>High-Fidelity Rendering Engine</h6>
+              <p class="paragraph">
+                Built for performance and quality, our rendering engine utilizes
+                a modern tech stack for console-quality gameplay in the browser.
+              </p>
+              <ul role="list" class="list">
+                <li>
+                  <strong>GPU instancing</strong>: Render thousands of objects
+                  simultaneously with minimal overhead.
+                </li>
+                <li>
+                  <strong>Physically-based rendering (PBR)</strong>: Realistic
+                  materials using metal/roughness workflows.
+                </li>
+                <li>
+                  <strong>Frustum Culling</strong>: Optimize performance by only
+                  drawing objects visible to the camera.<br />
+                </li>
+                <li>
+                  <strong>1,000s of Animated Characters on Screen</strong>: Our
+                  engine can handle extensive character animations.<br />
+                </li>
+                <li>
+                  <strong>Level of Detail (LOD) Support</strong>: Automatically
+                  adjust model complexity based on camera distance for optimized
+                  performance.<br />
+                </li>
+                <li>
+                  <strong>Post-processing effects</strong>: Includes effects
+                  like bloom, FXAA, and ambient occlusion, depth of field, and
+                  more for higher-quality visuals.<br />
+                </li>
+                <li>
+                  <strong>WebGL2 and WebAssembly</strong>: Leverage modern web
+                  technologies for console-quality performance directly in the
+                  browser.<br />
+                </li>
+                <li>
+                  <strong>Environment &amp; Terrain</strong>: Build expansive
+                  game worlds with large, performance-optimized, tiled terrains
+                  and simulate realistic grass movement, reacting dynamically to
+                  wind and other environmental factors.<br />
+                </li>
+              </ul>
+              <h2 class="heading-6">Entity Component System (ECS)</h2>
+              <h6>Optimized ECS for Massive Scale</h6>
+              <p class="paragraph">
+                Our custom-built ECS architecture is designed to handle massive
+                game worlds and high object counts with ease.
+              </p>
+              <ul role="list" class="list">
+                <li>
+                  <strong>Multithreaded Rendering</strong>: The renderer runs on
+                  a separate thread from game logic, allowing both to execute
+                  simultaneously without performance bottlenecks.
+                </li>
+                <li>
+                  <strong>Data-driven architecture</strong>: Efficiently manage
+                  components and systems, minimizing cache misses and improving
+                  frame times.
+                </li>
+                <li>
+                  <strong>High scalability</strong>: Designed to scale to
+                  thousands of entities with minimal performance degradation,
+                  allowing complex environments and interactions.<br />
+                </li>
+                <li>
+                  <strong>Custom components</strong>: Easily define and
+                  implement custom components to extend your game’s
+                  functionality and tailor systems to your specific needs.<br />
+                </li>
+              </ul>
+              <h2 class="heading-6">Animations</h2>
+              <h6>Comprehensive Animation System</h6>
+              <p class="paragraph">
+                Our animation system focuses on high-quality character and
+                object animation.
+              </p>
+              <ul role="list" class="list">
+                <li>
+                  <strong>Animation State Machines</strong>: Define complex
+                  animation behaviors using flexible state machines.
+                </li>
+                <li>
+                  <strong>Skeletal Rig Animations</strong>: Drive lifelike
+                  character movements with skeletal rigs.
+                </li>
+                <li>
+                  <strong>Animation Blending</strong>: Smoothly transition
+                  between animations to create fluid motion.<br />
+                </li>
+                <li>
+                  <strong>Retargeting Support</strong>: Reuse animations across
+                  multiple characters with retargeting functionality.<br />
+                </li>
+                <li>
+                  <strong>Socketing Support</strong>: Attach objects (e.g.,
+                  weapons, accessories) to animated characters easily.<br />
+                </li>
+              </ul>
+              <h2 class="heading-6">Asset Management</h2>
+              <h6>Efficient Asset Pipeline</h6>
+              <p class="paragraph">
+                A robust, web-optimized pipeline that simplifies the import and
+                management of game assets.
+              </p>
+              <ul role="list" class="list">
+                <li>
+                  <strong>GLTF-only support</strong>: Streamlined asset import
+                  with a focus on GLTF models and animations for compatibility
+                  and efficiency.
+                </li>
+                <li>
+                  <strong>Automatic Texture Compression</strong>: Compress
+                  textures to reduce loading times and improve performance
+                  without significantly compromising visual quality.
+                </li>
+                <li>
+                  <strong>Parallel Downloads</strong>: Reduce load times by
+                  downloading multiple assets at the same time without
+                  interrupting the main game loop.
+                </li>
+                <li>
+                  <strong>Asset Caching</strong>: Further reduce load times and
+                  improve performance by temporarily storing frequently accessed
+                  assets in memory to speed up their retrieval.
+                </li>
+                <li>
+                  <strong>Progressive Downloads</strong>: Load assets based on
+                  player location to reduce initial load times and improve user
+                  experience.<br />
+                </li>
+                <li>
+                  <strong>Cloud Integration</strong>: Manage assets and version
+                  control with direct deployment to the web.<br />
+                </li>
+              </ul>
+              <h2 class="heading-6">Physics</h2>
+              <h6>Powered by Rapier Physics Engine</h6>
+              <p class="paragraph">
+                Our physics system is powered by the
+                <a
+                  href="https://web.archive.org/web/20260213024854/https://rapier.rs/"
+                  >Rapier physics engine</a
+                >, enabling realistic simulations. Whether it’s object
+                interactions, gravity effects, or complex joint systems, our
+                physics implementation ensures smooth, real-time responses.
+              </p>
+              <ul role="list" class="list">
+                <li>
+                  <strong>Basic Physics</strong>: Collision detection and
+                  resolution, gravity, friction and restitution, and more.
+                </li>
+                <li>
+                  <strong>Rigid Bodies with Joints</strong>: Supports
+                  comprehensive physics simulations, adding realism to game
+                  dynamics.
+                </li>
+                <li>
+                  <strong>Customer Controllers</strong>: Implement your own
+                  custom controllers for characters, vehicles, etc. and
+                  integrate those into the game using customer components.
+                </li>
+                <li>
+                  <strong>Multiple Collider Shapes</strong>: Along with support
+                  for various shapes, including box, sphere, capsule, cone, and
+                  more, you can use your own custom collider meshes in-game with
+                  trimesh support.
+                </li>
+                <li>
+                  <strong>Joint Support</strong>: Implement complex mechanics
+                  like hinges, sliders, and spring systems.<br />
+                </li>
+                <li>
+                  <strong>Optimized for Performance</strong>: Real-time physics
+                  optimized for web environments with minimal impact on frame
+                  rates.<br />
+                </li>
+              </ul>
+              <h2 class="heading-6">Lighting</h2>
+              <h6>Next Gen Lighting for Web Gaming</h6>
+              <p class="paragraph">
+                Create visually stunning environments. We offer support for
+                thousands of lights using directional, spot, and point lights,
+                and the inclusion of features like bloom and emissive textures
+                adds depth and life to your game worlds. This nuanced control
+                over lighting sets new visual standards in web gaming.
+              </p>
+              <ul role="list" class="list">
+                <li>
+                  <strong>Directional, Spot, and Point Lights</strong>: Impress
+                  your players by simulating sunlight or other distant light
+                  sources using directional lighting, or use spot lights for a
+                  flashlight effect. You can use point lights to provide a
+                  realistic fallout effect around the light source, like a light
+                  bulb.
+                </li>
+                <li>
+                  <strong>Thousands of Lights</strong>: Our engine can handle
+                  thousands of lights in a scene, allowing you to create a
+                  visually rich and dynamic environment.
+                </li>
+                <li>
+                  <strong>Bloom</strong>: Recreate the natural response of
+                  cameras and the human eye to intense light sources.
+                </li>
+                <li>
+                  <strong>Emissive Textures</strong>: Create objects or surfaces
+                  that appear to be self-illuminating.
+                </li>
+                <li>
+                  <strong>Dynamic Sky</strong>: Simulate time-of-day transitions
+                  with real-time, dynamic sky rendering.
+                </li>
+                <li>
+                  <strong>HDR Environment Maps</strong>: Use High Dynamic Range
+                  (HDR) environment maps to capture a wider range of light
+                  intensities, enabling more detailed and realistic reflections,
+                  lighting, and shading.
+                </li>
+              </ul>
+              <h2 class="heading-6">Sound</h2>
+              <h6>Immersive 3D Audio</h6>
+              <p class="paragraph">
+                Build a rich, immersive sound environment with our comprehensive
+                3D audio system.
+              </p>
+              <ul role="list" class="list">
+                <li>
+                  <strong>Spatial Audio Support</strong>: Place sound sources in
+                  3D space and adjust parameters like distance falloff for
+                  realistic audio behavior.
+                </li>
+                <li>
+                  <strong>Audio asset management</strong>: Easily import and
+                  manage high-quality audio files with support for common
+                  formats like MP3, WAV, OGG, and FLAC.<br />
+                </li>
+              </ul>
+              <h2 class="heading-6">Scripting</h2>
+              <h6>Rust-Powered Scripting System</h6>
+              <p class="paragraph">
+                Write high-performance game logic in Rust and combine with the
+                power of WebAssembly for unparalleled web gaming at near-native
+                speeds.
+              </p>
+              <ul role="list" class="list">
+                <li>
+                  <strong>Efficient Memory Management</strong>: Rust's safety
+                  guarantees combined with its ownership model provide memory
+                  efficiency in large-scale games.
+                </li>
+                <li>
+                  <strong>Optimized for Performance</strong>: Statically linked
+                  Rust scripts ensure maximum performance with minimal runtime
+                  costs.
+                </li>
+                <li>
+                  <strong>User-Friendly API</strong>: We have an easy-to-use API
+                  that is ever-evolving to our users' needs.
+                </li>
+              </ul>
+              <h2 class="heading-6">User Interface</h2>
+              <h6>Flexible, Dynamic UI System</h6>
+              <p class="paragraph">
+                Create interactive, scalable, and responsive game interfaces
+                that integrate directly with your game world.
+              </p>
+              <ul role="list" class="list">
+                <li>
+                  <strong>ECS-driven UI</strong>: UI components are fully
+                  integrated into the ECS, allowing for dynamic, data-driven
+                  interfaces.
+                </li>
+                <li>
+                  <strong>Real-time updates</strong>: UI elements can respond
+                  dynamically to in-game events, player inputs, or external data
+                  sources.
+                </li>
+              </ul>
+              <h2 class="heading-6">Backend Services</h2>
+              <h6>Integrated Cloud and Version Control</h6>
+              <p class="paragraph">
+                Create interactive, scalable, and responsive game interfaces
+                that integrate directly with your game world.
+              </p>
+              <ul role="list" class="list">
+                <li>
+                  <strong>Cloud deployment</strong>: Instantly deploy and play
+                  your game to our cloud environment for easy distribution and
+                  scaling.
+                </li>
+                <li>
+                  <strong>Version control</strong>: Built-in version control
+                  using Git ensures industry standard team collaboration.<br />
+                </li>
+                <li>
+                  <strong>User management</strong>: Manage player accounts,
+                  leaderboards, and user data with integrated backend services.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cta-wrap">
+        <div id="contact">
+          <div class="cta-text">
+            <img
+              id="contact-image"
+              loading="lazy"
+              alt=""
+              src="assets/66cf568c60ce2d8ab6dd31ce_logo-mark-black.svg"
+              class="image-6"
+            />
+            <div class="text-block-12">
+              Help shape the future of gaming<br />
+            </div>
+            <div class="text-block-14">
+              Request an invite to our closed beta to get early access to our
+              engine, provide feedback, and work directly with our team.
+            </div>
+          </div>
+          <div class="newsletter_form-container-2 w-form w-form-loading">
+            <form
+              id="email-form"
+              name="email-form"
+              data-name="Email Form"
+              method="get"
+              class="newsletter_form"
+              data-wf-page-id="66e49d7cd33dae573ee55838"
+              data-wf-element-id="2e334818-93b6-2bcd-7ecc-0ebbe6f898a5"
+              data-turnstile-sitekey="0x4AAAAAAAQTptj2So4dx43e"
+              aria-label="Email Form"
+            >
+              <input
+                class="text-field-4 w-input"
+                maxlength="256"
+                name="name-2"
+                data-name="Name 2"
+                placeholder="myemail@email.com"
+                type="email"
+                id="name-2"
+                required=""
+              /><input
+                type="submit"
+                data-wait="Please wait..."
+                class="submit-button-2 w-button w-form-loading"
+                value="Request Invite"
+                disabled="disabled"
+              />
+              <div>
+                <div>
+                  <input
+                    type="hidden"
+                    name="cf-turnstile-response"
+                    id="cf-chl-widget-jo3q5_response"
+                  />
+                </div>
+              </div>
+            </form>
+            <div
+              class="w-form-done"
+              tabindex="-1"
+              role="region"
+              aria-label="Email Form success"
+            >
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div
+              class="w-form-fail"
+              tabindex="-1"
+              role="region"
+              aria-label="Email Form failure"
+            >
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+          <div class="newsletter_sec-info">
+            <div class="text-block-16">No spam. No bullshit.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-layout-hflex section">
+      <div class="w-layout-hflex flex-block-8">
+        <div class="w-layout-hflex flex-block-6">
+          <a
+            href="https://web.archive.org/web/20260213024854/https://discord.gg/mHsQayQNdp"
+            class="w-inline-block"
+            ><img
+              src="assets/66d0b3f8bcd75ba762f6a3e0_iconDiscord.svg"
+              loading="lazy"
+              alt=""
+              class="image-10" /></a
+          ><a
+            href="https://web.archive.org/web/20260213024854/https://x.com/GamesOfChaos"
+            target="_blank"
+            class="w-inline-block"
+            ><img
+              src="assets/66d0b3f8754fac74f124e585_iconX.svg"
+              loading="lazy"
+              alt=""
+              class="x" /></a
+          ><a
+            href="https://web.archive.org/web/20260213024854/https://www.instagram.com/get_chaotic"
+            target="_blank"
+            class="w-inline-block"
+            ><img
+              src="assets/66d0b3f8cdaf917f0f04949e_iconInstagram.svg"
+              loading="lazy"
+              alt=""
+              class="instagram" /></a
+          ><a
+            href="https://web.archive.org/web/20260213024854/https://www.linkedin.com/company/ultimate-gaming-platform/"
+            target="_blank"
+            class="w-inline-block"
+            ><img
+              src="assets/66d0b3f820a493e7d5c20130_iconLinkedin.svg"
+              loading="lazy"
+              alt=""
+              class="linkedin" /></a
+          ><a
+            href="https://web.archive.org/web/20260213024854/https://tiktok.com/@get_chaotic"
+            target="_blank"
+            class="w-inline-block"
+            ><img
+              src="assets/66d0b3f82daa4c24d9346547_iconTiktok.svg"
+              loading="lazy"
+              alt=""
+              class="tiktok" /></a
+          ><a
+            href="https://web.archive.org/web/20260213024854/https://www.youtube.com/@Get_Chaotic"
+            target="_blank"
+            class="w-inline-block"
+            ><img
+              src="assets/66d0b3f825f96638bcc29eb9_iconYoutube.svg"
+              loading="lazy"
+              alt=""
+              class="youtube"
+          /></a>
+        </div>
+        <div class="w-layout-hflex flex-block-9">
+          <div class="text-block-20">
+            <a
+              href="https://web.archive.org/web/20260213024854/https://getchaotic.com/features"
+              aria-current="page"
+              class="link-3 w--current"
+              >Engine</a
+            >
+          </div>
+          <div class="text-block-18">
+            <a
+              href="https://web.archive.org/web/20260213024854/https://getchaotic.com/blog"
+              class="link-7"
+              >Blog</a
+            >
+          </div>
+          <div class="text-block-18">
+            <a
+              href="https://web.archive.org/web/20260213024854/https://getchaotic.com/contact"
+              class="link-4"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="w-layout-hflex flex-block-7">
+        <div class="w-layout-hflex flex-block-10">
+          <div class="text-block-17">
+            <a
+              href="https://web.archive.org/web/20260213024854/https://getchaotic.com/privacy-policy"
+              class="link"
+              >Privacy Policy</a
+            >
+          </div>
+          <div class="text-block-17">
+            <a
+              href="https://web.archive.org/web/20260213024854/https://getchaotic.com/terms-of-use"
+              class="link-2"
+              >Terms of Use</a
+            >
+          </div>
+        </div>
+        <div class="text-block-19">
+          © 2025 Chaotic Games, Inc. All rights reserved.
+        </div>
+      </div>
+    </div>
+    <script
+      src="assets/jquery-3.5.1.min.dc5e7f18c8.js"
+      type="text/javascript"
+      integrity=""
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="assets/webflow.schunk.1516460cf6ac59e1.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="assets/webflow.94b339a6.00c1fdd8419aeec6.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="assets/cookie-consent_002.js"
+      type="text/javascript"
+      integrity=""
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+<!--
+     FILE ARCHIVED ON 02:48:54 Feb 13, 2026 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:40:54 May 23, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.642
+  exclusion.robots: 0.052
+  exclusion.robots.policy: 0.039
+  esindex: 0.01
+  cdx.remote: 76.289
+  LoadShardBlock: 239.066 (3)
+  PetaboxLoader3.resolve: 209.197 (3)
+  PetaboxLoader3.datanode: 116.673 (4)
+  load_resource: 194.171
+  nav: 0.133 (6)
+-->
